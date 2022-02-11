@@ -1,0 +1,687 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+
+
+
+
+
+
+// primary Color
+
+$Bright-Red: hsl(12, 88%, 59%);
+$Dark-Blue: hsl(228, 39%, 23%);
+
+// Neutral Colors
+
+$Dark-Grayish-Blue: hsl(227, 12%, 61%);
+$Very-Dark-Blue: hsl(233, 12%, 13%);
+$Very-Pale-Red: hsl(13, 100%, 96%);
+$Vary-Light-Gray: hsl(0, 0%, 98%);
+
+
+*{
+box-sizing: border-box;
+}
+
+
+body{
+padding: 0;
+margin: 0 auto;
+overflow-x: hidden;
+position: relative;
+font-size: 16px;
+font-family: 'Be Vietnam', sans-serif;
+
+.navbar , .main-section , .second-section{
+width: 80%;
+margin:0 auto;
+}
+
+.btn{
+    padding: 20px 40px;
+    border-radius: 50px;
+    border: transparent;
+    margin: 30px auto;
+    display: block;
+    background-color: $Bright-Red;
+    color: white;
+}
+
+.btn-white{
+    padding: 20px 40px;
+    border-radius: 50px;
+    border: transparent;
+    margin: 30px auto;
+    display: block;
+    background-color:white;
+    color: $Bright-Red;
+}
+
+h1, h2, p{
+    text-align: center;
+} 
+}
+
+
+.nav-button, .nav li{
+display: none;
+}
+
+
+.d-none{
+    display: none;
+    }
+    
+    .d-block{
+    display: block;
+    }
+    
+ 
+/** NAVBAR **/
+
+.navbar{
+display: flex;
+justify-content: space-between;
+position: relative;
+padding: 2em 0;
+}
+
+.nav-mobile-links{
+position: absolute;
+width: 100%;
+background-color: white;
+top: 50px;
+display: none;
+margin-top: 30px;
+
+li{
+list-style-type: none;
+text-align: center;
+padding: 2em 0;
+}
+}
+
+.nav-close{
+display: none;
+}
+
+
+/** MAIN SECTION **/
+
+.main-svg{
+
+    margin: 0 auto;
+
+    img.illustration{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    }
+    
+    img.pattern{
+    position: absolute;
+    width: 100%;
+    top: -40px;
+    right: -40px;
+    z-index: -2;
+    }
+}
+
+.main-content{
+
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+
+    h1{
+    margin: 0 auto;
+    color: black;
+    }
+
+    p{
+    margin: 10px auto;
+    }
+
+    .btn{
+    padding: 20px 40px;
+    border-radius: 50px;
+    border: transparent;
+    margin: 30px auto;
+    display: block;
+    background-color: $Bright-Red;
+    color: white;
+    }
+
+}
+
+
+// MAIN SECTION END
+
+
+.second-heading{
+width: 80%;
+ margin: 0 auto;
+
+ img.second-svg{
+
+    display: none;
+
+     /* 
+    position: absolute;
+    right: -300px;
+    top: 400px;
+    width: 80%;
+    z-index: -2;
+    */
+}
+
+}
+
+
+
+
+.second-skills{
+
+    width: 90%;
+    padding: 40px 0;
+    margin: 0 auto;
+
+    h4{
+    background-color: $Very-Pale-Red;
+    text-align: start;
+    margin: 0 auto;   
+    padding: 8px 0px;
+    }
+
+    .skill{
+    text-align: center;
+    }
+    
+    .skill-number{
+    padding: 8px 20px;
+    background-color: $Bright-Red;
+    border-radius: 20px;
+    }
+
+}
+
+
+// SND SECTION END
+
+.reference-heading{
+width: 80%;
+margin: 0 auto;
+padding: 3em 0;
+
+h2{
+text-align: center;
+}
+
+}
+
+.reference{
+background-color: $Vary-Light-Gray;
+width: 90%;
+margin: 0 auto;
+padding: 2em;
+position: relative;
+
+img{
+width: 60px;
+display: block;
+margin: 0 auto;
+position:absolute;
+top:-30px;
+left: 45%;
+}
+
+h5{
+text-align: center;
+}
+
+}
+
+
+
+
+.circles{
+
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+
+    .circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 1px solid $Bright-Red;
+    margin: 2px;
+    }
+
+    .circle-active{
+    background-color: $Bright-Red;
+    }
+}
+
+.animate-left {
+    position: relative;
+    animation: animateleft 0.8s
+  }
+  
+  @keyframes animateleft { 
+    from { right :-500px; opacity:0 } to { right:0; opacity:1 }
+  }
+
+
+// REFERENCE END
+
+
+
+.contact-container{
+background-color: $Bright-Red;
+padding: 2em;
+}
+
+.contact{
+width: 80%;
+margin:0 auto;
+}
+
+h1{
+color: white;
+}
+
+
+
+
+
+
+
+// CONTACT END 
+
+.footer-desktop{
+display: none;
+}
+
+footer{
+background-color: $Very-Dark-Blue;
+padding: 4em 0;
+
+.footer-container{
+width: 90%;
+margin: 0 auto;
+
+.updates{
+
+    
+    text-align: center;
+
+    input{
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: transparent;
+    margin: 0 5px;
+    }
+
+    .btn-go{
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: transparent;
+    background-color: $Bright-Red;
+    color: white;
+
+    }
+}
+
+.links{
+
+    display: flex;
+    justify-content: space-around;
+    line-height: 2em;
+    padding: 30px 0;
+
+    li{
+    list-style-type: none;
+    color: white;
+    }
+
+}
+
+.socialmedia{
+
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin:0 auto;
+    img{
+    width: 40px;
+    }
+
+}
+
+.logo{
+
+    padding: 50px 0;
+
+    img{
+    display: block;
+    margin: 0 auto;
+    }
+
+}
+
+.impressum{
+color: $Vary-Light-Gray;
+}
+
+}
+}
+
+
+
+// DESKTOP DESIGN
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@media (min-width:900px){
+
+    //nav
+
+    
+
+    .navbar{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .nav-button, .nav li{
+            display: block;
+            }
+
+       .nav li{
+        padding: 0 10px;
+       } 
+
+    }
+    
+        .nav-mobile{
+        display: none;
+        }
+
+        .nav{
+        display: flex;
+        list-style-type: none;
+
+        .nav:nth-child(1){
+        padding: 0 20px;
+        }
+
+        
+
+        }
+
+   
+
+        //main content
+
+
+
+    .main-container{
+    display: flex;
+    padding: 40px 0;
+    
+
+    .main-svg{
+        top: 0;
+        right: 0;
+        order: 2;
+        
+        
+    
+        img.illustration{
+        width: 90%;
+        }
+
+        img.pattern{
+        width: 44%;
+
+
+        }
+    
+        }
+
+    }
+
+    .main-content{
+    width: 50%;
+    padding: 2em;
+  
+    h1{
+    text-align: start;
+    font-size: 45px;
+    margin: 10px 0;
+    }
+
+    p{
+    text-align: start;
+    margin:20px 0;
+    width: 70%;
+    }
+
+    .btn{
+    text-align: start;
+    margin: 30px 0;
+    }
+
+    }
+
+
+
+// SECOND SECTION
+
+
+
+
+.second-content{
+display: flex;
+
+.second-heading{
+width:100%;
+padding: 0 2em;
+position: relative;
+
+img.second-svg{
+    display: block;
+    position: absolute;
+    left: -450px;
+    bottom: -300px;
+    width: 90%;
+    z-index: -2;
+}
+
+
+
+h2{
+text-align: start;
+font-size: 40px;
+}
+
+p{
+text-align: start;
+width: 70%;
+}
+
+}
+
+
+.second-skills{
+
+.skill{
+
+    h4{
+    background-color: transparent;
+    margin-left: 20px;
+    }
+
+    h4 span{
+        margin-right: 20px;
+    }
+
+    p{
+    text-align: start;
+    margin-left: 100px;
+    }
+}
+
+}
+
+}
+
+// REFERENCE
+
+.reference-container{
+
+    padding-bottom: 5em;
+
+
+    .reference-heading{
+    padding-bottom: 6em;
+    }
+
+    .reference-main{
+    display: flex;
+    
+
+    .reference{
+    margin: 0 1em;
+    }
+
+    }
+
+    .r-1{
+    order: 1;
+    }
+
+    .r-2{
+     order: 0;
+    }
+
+    .r-3{
+    order: 3;
+    }
+
+    .reference.r-4{
+    display: none;
+    }
+}
+
+.circles{
+display: none;
+}
+
+
+
+
+// CONTACT
+
+.contact-container{
+
+    padding: 2em;
+
+    .contact{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+
+    h1{
+    width: 40%;
+    text-align: start;
+    }
+
+    .btn-white{
+        
+        margin:50px 0;
+        padding: 0px 30px;
+
+    }
+
+    }
+
+}
+
+
+// footer
+
+.footer-container{
+display: none;
+}
+
+.footer-desktop{
+display: flex;
+justify-content: space-between;
+flex-grow: 1 4 1;
+width: 80%;
+margin: 0 auto;
+}
+
+.col1{
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+}
+
+.socialmedia img{
+padding: 0 5px;
+}
+
+.links{
+display: flex;
+justify-content: space-between;
+
+ul{
+padding: 0 6em;
+}
+
+li{
+list-style-type: none;
+color: white;
+padding: 5px 0;
+}
+
+}
+
+.col3{
+
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+
+.updates{
+
+    text-align: center;
+
+    input{
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: transparent;
+    margin: 0 5px;
+    }
+
+    .btn-go{
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: transparent;
+    background-color: $Bright-Red;
+    color: white;
+
+    }
+}
+
+.impressum{
+color: $Vary-Light-Gray;
+}
+}
+
+} // end
