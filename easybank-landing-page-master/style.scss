@@ -1,0 +1,483 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding:0;
+}
+
+.body{
+font-size: 18px;
+font-family: 'Public Sans', sans-serif;
+}
+
+h1{
+font-size:35px;
+font-weight: 300;
+font-family: 'Public Sans', sans-serif;
+}
+
+h2{
+font-size: 18px;
+font-weight: 300;
+font-family: 'Public Sans', sans-serif;
+}
+
+p{
+color:hsl(233, 8%, 62%);
+font-family: 'Public Sans', sans-serif;
+}
+
+.nav{
+display: flex;
+justify-content: space-around;
+align-items: center;
+height:80px;
+margin:auto;
+}
+
+.logo{
+height: 20px;
+width: 150px;
+align-self: center;
+}
+
+.button{
+width: 160px;
+height: 40px;
+border-radius: 25px;
+border: 0px solid;
+align-self: center;
+color: white;
+font-weight: bold;
+font-size: 15px;
+background-image: linear-gradient(to right, hsl(136, 65%, 51%) , hsl(192, 70%, 51%));
+}
+
+.button:hover{
+opacity: 0.5;
+}
+
+.navlist{
+display: flex;
+align-items: center;
+}
+
+.navlist li{
+list-style-type: none;
+margin: 0 15px 0px 15px;
+font-size: 18px;
+color:hsl(233, 8%, 62%);
+border-bottom: 2px solid transparent;
+line-height: 77px;
+
+}
+
+.navlist li:hover{
+    border-bottom: 2px solid;
+    border-image-slice: 1;
+    border-image-source:linear-gradient(to right, hsl(136, 65%, 51%) , hsl(192, 70%, 51%));
+    line-height: 77px;
+}
+
+//NAV END
+
+
+// Mobile SVG
+.mobile-svg-container{
+display: none;
+}
+
+
+.main{
+height:50vh;
+background-color: hsl(0, 0%, 98%);
+position: relative;
+z-index: 0;
+
+.bg-intro-desk{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    z-index: -1;
+    }
+
+.phones{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    z-index: -1;
+}
+}
+
+.heading{
+width: 80%;
+margin: auto;
+z-index: 0;
+
+h1{
+padding-top: 50px;
+font-size: 50px;
+padding-bottom: 20px;
+}
+
+p{
+padding-bottom: 50px;
+width: 50%;
+}
+}
+
+
+
+.product{
+padding:80px 0px 40px 0px;
+height: 100%;
+background-color:hsl(220, 16%, 96%);
+}
+
+.product-heading{
+width: 85%;
+margin: auto;
+padding-bottom: 50px;
+
+h1{
+padding-bottom: 20px;
+}
+
+}
+
+.products{
+display: flex;
+justify-content: space-between;
+width: 85%;
+margin:1em auto 0 auto;
+flex-wrap: wrap;
+
+
+h2{
+    margin-bottom: 35px;
+    margin-top: 35px;
+    font-size: 23px;
+    color: black;
+    }
+    p{
+    font-size: 18px;
+    }
+}
+
+.products div{
+max-width: 280px;
+line-height: 25px;
+padding-bottom: 30px;
+}
+
+
+.article-container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 2em 0 8em 0;
+}
+
+
+.article-main{
+background-color: hsl(0, 0%, 98%);
+height: 100%;
+}
+
+.article-heading{
+width: 85%;
+margin: auto;
+padding-bottom: 50px;
+padding-top: 50px;
+}
+
+.images{
+width:100%;
+max-width: 300px;
+height: 200px;
+margin-bottom: 20px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+
+.articles{
+display: flex;
+justify-content: space-between;
+width: 85%;
+margin: auto;
+flex-wrap: wrap;
+
+
+
+.author{
+font-size: 13px;
+}
+
+p{
+padding-bottom: 10px;
+font-size: 15px;
+line-height: 1.5em;
+max-width: 300px;
+}
+
+h2{
+font-weight: lighter;
+margin-bottom: 15px;
+max-width: 300px;
+}
+
+h2:hover{
+color: hsl(136, 65%, 51%);
+}
+
+}
+
+.article{
+max-width: 280px;
+background-color: white;
+margin-bottom: 2em;
+}
+
+.article-text{
+padding:1em;
+}
+
+
+footer{
+background-color: hsl(233, 26%, 24%);
+}
+
+.footer-container{
+display: flex;
+justify-content: space-around;
+width: 85%;
+margin: auto;
+height: 200px;
+align-items: center;
+}
+
+
+.footer-logo{
+padding-bottom: 50px;
+}
+
+
+.footer-links,.footer-links-2{
+list-style-type: none;
+color: white;
+}
+
+.footer-links li,.footer-links-2 li{
+padding-bottom: 15px;
+}
+
+.footer-links li:hover,.footer-links-2 li:hover{
+color: hsl(136, 65%, 51%);
+}
+
+.contact{
+display: flex;
+flex-direction: column;
+}
+
+.contact p{
+font-size: 12px;
+}
+.contact-button{
+margin-bottom: 35px;
+align-self: flex-end;
+}
+
+.social-media{
+display: flex;
+justify-content: space-between;
+}
+
+.fa{
+color: white;
+padding: 0px 5px 0px 5px;
+}
+
+.fa:hover{
+color: hsl(136, 65%, 51%);
+}
+
+.d-none{
+display: none;
+}
+
+
+.nav-hamburger{
+display: none;
+}
+
+
+@media screen and (max-width:780px){
+.main{
+text-align: center;
+
+h1{
+font-size: 30px;
+}
+}
+.product{
+height: 100%;
+}
+.product-heading{
+text-align: center;
+}
+
+.products{
+text-align: center;
+padding:0;
+
+h2{
+margin-bottom: 8px;
+}
+}
+
+.article-container{
+padding: 1em 0;
+}
+
+.article-heading{
+text-align: center;
+}
+
+.articles{
+margin: auto;
+width: 80%;
+justify-content: center;
+
+.article{
+margin-bottom: 5em;
+}
+
+h2{
+margin: auto;;
+}
+
+p{
+margin: auto;
+}
+}
+
+.footer-container{
+flex-direction: column;
+height: 600px;
+justify-content: space-evenly;
+}
+
+.footer-links{
+text-align: center;
+
+
+}
+
+.footer-links-2{
+text-align: center;
+}
+
+.contact-button{
+align-self: center;
+}
+
+nav{
+    position: relative;
+    
+    .button{
+    display: none;
+    }
+      
+}
+
+
+.nav{
+    justify-content: space-between;
+    padding: 0 2em;
+}
+
+.heading{
+p{
+width: 100%;
+}
+}
+
+.bg-intro-desk{
+display: none;
+}
+.phones{
+display: none;
+}
+
+
+
+.articles, .products{
+width: 100%;
+}
+
+.products{
+justify-content: center;
+}
+
+.products div{
+width: 95%;
+margin: 2em 0;
+}
+
+.articles .article{
+width: 100%;
+}
+
+
+.mobile-svg-container{
+    display: block;
+    width: 100%;
+    height: 365px;
+    position: relative;
+    overflow: hidden;
+    
+        img{
+        width: 100%;
+        position: absolute;
+        bottom:15px;
+        }
+    
+        background-image: url("images/bg-intro-mobile.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    .navlist{
+    display: none;
+    }
+
+    .nav-hamburger{
+        display: block;
+        }
+
+     .active{
+        display: block;
+        position: absolute;
+        top: 120%;
+        left: 10%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        color: black;
+        z-index: 1;
+        justify-content: space-evenly;
+        align-content: center;
+        background: white;
+    }
+
+    .navlist li{
+    line-height: 20px;
+    }
+    
+
+}
+
