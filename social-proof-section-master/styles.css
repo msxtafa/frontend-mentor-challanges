@@ -1,0 +1,195 @@
+*{
+ box-sizing: border-box;
+}
+
+body{
+margin:0;
+padding:0;
+font-size: 15px;
+width: 80%;
+margin: auto;
+font-family: 'Spartan', sans-serif;
+}
+
+h1{
+margin: 0;
+}
+
+p{
+font-size: 15px;
+}
+
+/** HEADING **/
+
+.head{
+display: flex;
+justify-content: space-around;
+padding-top: 80px;
+padding-bottom: 80px;
+}
+
+.header{
+width: 30%;
+}
+
+.heading{
+font-size: 50px;
+color:hsl(300, 43%, 22%);
+}
+
+.p{
+ color:   hsl(303, 10%, 53%);
+}
+
+/** RATE **/
+
+.rates{
+
+}
+
+.stars{
+align-self: center;
+}
+
+.rate{
+display: flex;
+margin: 20px 0px;
+padding: 0px 40px;
+border-radius: 5px;
+font-size: 12px;
+color:hsl(300, 43%, 22%);
+background-color: hsl(300, 24%, 96%);
+}
+
+
+.r1{
+transform: translate(-40px);
+}
+
+.r3{
+transform: translate(40px);
+}
+
+.rate-text{
+font-weight: bold;
+padding: 3px 20px;
+}
+
+/** REVIEW **/
+
+.reviews{
+display: flex;
+}
+
+.review{
+border: 1px solid;
+margin: 25px;
+border-radius: 5px;
+padding: 25px;
+background-color:hsl(300, 43%, 22%) ;
+}
+
+.rv1{
+transform: translate(0px,-25px);
+}
+
+.rv2{
+    transform: translate(0px,0px);
+    }
+ .rv3{
+    transform: translate(0px,25px);
+        }
+.profile{
+display: flex;
+justify-content: flex-start;
+}
+
+.profile-img{
+border-radius: 50px;
+width: 40px;
+margin-right: 20px;
+}
+.name{
+margin: 0px;
+padding-bottom: 3px;
+color: white;
+}
+
+.buyer{
+margin: 0px;
+color: hsl(333, 80%, 67%);
+}
+
+
+.rezension{
+color: white;
+}
+
+
+@media (max-width:800px){
+.header{
+width: 100%;
+}
+.rates{
+width: 100%;
+}
+
+.r1{
+    transform: none;
+    }
+    
+    .r3{
+    transform: none;
+    }
+
+}
+
+@media (max-width:600px){
+
+
+    .head{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    }
+     .header{
+        width: 100%;
+        text-align: center;
+     }
+
+     .heading{
+     font-size: 35px;
+     }
+     .rates{
+         width: 100%;
+         text-align: center;
+     }
+
+     .rate{
+        display: flex;
+        flex-direction: column;
+        padding:15px 0px;
+     }
+
+     .rate-text{
+        margin:5px 0px;
+     }
+
+     .r1{
+        transform:none;
+        }
+        
+        .r3{
+        transform: none;
+        }
+
+     .reviews{
+        display: flex;
+        flex-direction: column;
+     }
+
+     .review{
+        margin: 10px 0px;
+     }
+     
+}
