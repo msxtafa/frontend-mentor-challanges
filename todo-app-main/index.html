@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="color-scheme" content="dark light">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link id="light" rel="stylesheet light" href="">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Frontend Mentor | Todo app</title>
+
+  
+</head>
+<body>
+
+  <div class="todo-app">
+    <!--heading-->
+    <div class="heading d-block d-between align-center">
+      <div class="logo">
+        <h1>todo</h1>
+      </div>
+      <div class="theme-icon sun"></div>
+    </div>
+    <!--tasks-->
+    <div class="container">
+      <!--Input -->
+      <div class="input-container todo d-flex align-center margin-bottom border-radius-bottom border-radius-top">
+        <input id="input" type="text" placeholder="Create a new todo...">
+      </div>
+   <!--created Todos-->
+ <div id="todo-container"></div>
+  <div class="todo-info todo space-between border-radius-bottom d-block d-between margin-bottom shadow">
+    <p class="items-left">item left</p>
+    <p class="clear-completed">Clear Completed</p>
+  </div>
+      <!-- remaining info /  clear complete -->
+        <div class="options todo d-center d-block shadow">
+          <p class="active" data-value="all">All</p>
+          <p  data-value="active">Active</p>
+          <p  data-value="completed" >Completed</p>
+        </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
