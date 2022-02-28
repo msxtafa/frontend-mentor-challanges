@@ -1,0 +1,113 @@
+
+
+/************************************************************/
+/********************  Utility-classes   ********************/
+/************************************************************/
+    
+
+.d-flex{display: flex; gap: var(--gap, 1rem);}    
+.d-grid{ display: grid;gap: var(--gap, 1rem);}   
+.d-block{display: block;} 
+.d-none{display: none;}
+.uppercase{text-transform: uppercase;}
+.justify-center{justify-content: center;}
+.space-between{justify-content: space-between;}
+.column{
+flex-direction: column;
+}
+.align-center{
+align-items: center;
+}
+.padding-bottom{
+padding-bottom: 15px;
+}
+
+
+/************************************************************/
+/********************  background-color  ********************/
+/************************************************************/
+
+$bg-1: hsl(185, 41%, 84%); // body
+$bg-2: hsl(183, 100%, 15%); // display
+$bg-3: hsl(0, 0%, 100%); // box
+$bg-4: hsl(172, 67%, 45%);
+
+.bg-1{background-color: $bg-1;}
+.bg-2{background-color: $bg-2;}
+.bg-3{background-color: $bg-3;}
+.bg-4{background-color: $bg-4;}
+
+/************************************************************/
+/********************     font-color     ********************/
+/************************************************************/
+
+$fc-1:hsl(172, 67%, 45%);
+$fc-2:hsl(183, 100%, 15%);
+$fc-3:hsl(186, 14%, 43%);
+$fc-4:hsl(184, 14%, 56%);
+$fc-5:hsl(185, 41%, 84%);
+$fc-6:hsl(189, 41%, 97%);
+$fc-7:hsl(0, 0%, 100%);
+
+.fc-1{color: $fc-1;}
+.fc-2{color: $fc-2;}
+.fc-3{color: $fc-3;}
+.fc-4{color: $fc-4;}
+.fc-5{color: $fc-5;}
+.fc-6{color: $fc-6;}
+.fc-7{color: $fc-7;}
+
+/************************************************************/
+/********************     font-size      ********************/
+/************************************************************/
+
+$fs-1:24px;   // heading
+$fs-2:40px;   // sub-heading
+$fs-3:1rem;   // paragraph
+
+.fs-1{font-size: $fs-1;}
+.fs-2{font-size: $fs-2;}
+.fs-3{font-size: $fs-3;}
+
+
+/************************************************************/
+/********************     font-family    ********************/
+/************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Josefin+Sans&family=Outfit:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap');
+
+$ff-1:'Bai Jamjuree', sans-serif;
+$ff-2:'Josefin Sans', sans-serif;
+$ff-3:'Outfit', sans-serif;
+$ff-4:'Space Mono', monospace;
+
+.ff-1{font-family: $ff-1;}
+.ff-2{font-family: $ff-2;}
+.ff-3{font-family: $ff-3;}
+.ff-4{font-family: $ff-4;}
+
+/************************************************************/
+/********************     font-weigth    ********************/
+/************************************************************/
+
+$fw-1:700;
+$fw-2:500;
+$fw-3:400;
+
+.fw-1{font-weight:$fw-1;}
+.fw-2{font-weight:$fw-2;}
+.fw-3{font-weight:$fw-3;}
+
+
+
+/************************************************************/
+/********************     letter-spacing   ******************/
+/************************************************************/
+
+$letter-spacing-1:4px;
+$letter-spacing-2:2.7px;
+$letter-spacing-3:2.35px;
+
+.letter-spacing-1{letter-spacing:$letter-spacing-1}
+.letter-spacing-2{letter-spacing:$letter-spacing-2}
+.letter-spacing-3{letter-spacing:$letter-spacing-3}
+

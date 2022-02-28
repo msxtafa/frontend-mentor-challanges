@@ -1,0 +1,367 @@
+/* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Josefin+Sans&family=Outfit:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+input {
+  border: none;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/************************************************************/
+/********************  Utility-classes   ********************/
+/************************************************************/
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.d-grid {
+  display: -ms-grid;
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.padding-bottom {
+  padding-bottom: 15px;
+}
+
+/************************************************************/
+/********************  background-color  ********************/
+/************************************************************/
+.bg-1 {
+  background-color: #c5e4e7;
+}
+
+.bg-2 {
+  background-color: #00494d;
+}
+
+.bg-3 {
+  background-color: white;
+}
+
+.bg-4 {
+  background-color: #26c0ab;
+}
+
+/************************************************************/
+/********************     font-color     ********************/
+/************************************************************/
+.fc-1 {
+  color: #26c0ab;
+}
+
+.fc-2 {
+  color: #00494d;
+}
+
+.fc-3 {
+  color: #5e7a7d;
+}
+
+.fc-4 {
+  color: #7f9c9f;
+}
+
+.fc-5 {
+  color: #c5e4e7;
+}
+
+.fc-6 {
+  color: #f4fafa;
+}
+
+.fc-7 {
+  color: white;
+}
+
+/************************************************************/
+/********************     font-size      ********************/
+/************************************************************/
+.fs-1 {
+  font-size: 24px;
+}
+
+.fs-2 {
+  font-size: 40px;
+}
+
+.fs-3 {
+  font-size: 1rem;
+}
+
+/************************************************************/
+/********************     font-family    ********************/
+/************************************************************/
+.ff-1 {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.ff-2 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.ff-3 {
+  font-family: "Outfit", sans-serif;
+}
+
+.ff-4 {
+  font-family: "Space Mono", monospace;
+}
+
+/************************************************************/
+/********************     font-weigth    ********************/
+/************************************************************/
+.fw-1 {
+  font-weight: 700;
+}
+
+.fw-2 {
+  font-weight: 500;
+}
+
+.fw-3 {
+  font-weight: 400;
+}
+
+/************************************************************/
+/********************     letter-spacing   ******************/
+/************************************************************/
+.letter-spacing-1 {
+  letter-spacing: 4px;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2.7px;
+}
+
+.letter-spacing-3 {
+  letter-spacing: 2.35px;
+}
+
+body {
+  background-color: #c5e4e7;
+  font-family: "Space Mono", monospace;
+  color: #00494d;
+}
+
+input {
+  color: #00494d;
+  background-color: #f4fafa;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 5px 15px;
+  text-align: right;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline-color: #26c0ab;
+}
+
+label {
+  font-weight: 700;
+  line-height: 3em;
+  color: #7f9c9f;
+}
+
+button {
+  padding: 0.5em 0;
+  color: #f4fafa;
+  border-radius: 5px;
+  background-color: #00494d;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #c5e4e7;
+  color: #00494d;
+}
+
+button.active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.container {
+  padding: 2em 1.5em;
+  margin-inline: auto;
+  max-width: 60rem;
+  border-radius: 10px;
+}
+
+.tips {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+  -ms-grid-columns: (minmax(0, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.tips input {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    gap: 2em;
+    padding: 2.5em;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .display-container > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2em 1em;
+    height: 100%;
+  }
+  .tips {
+    -ms-grid-columns: (minmax(0, 1fr))[3];
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

@@ -1,0 +1,96 @@
+@import "reset";
+@import "utility";
+
+
+
+body{
+background-color: $bg-1;
+font-family: $ff-4;
+color: $fc-2;
+}
+
+input{
+color: $fc-2;
+background-color:$fc-6;
+width: 100%;
+font-size: $fs-1;
+font-weight: $fw-1;
+padding: 5px 15px;
+text-align: right;
+border-radius: 5px;
+}
+
+input:focus{
+outline-color: $bg-4;
+}
+
+
+label{
+font-weight: $fw-1;
+line-height: 3em;
+color: $fc-4;
+}
+ 
+button{
+padding:0.5em 0;
+color: $fc-6;
+border-radius: 5px;
+background-color: $bg-2;
+font-weight: $fw-1;
+font-size: 20px;
+}
+
+button:hover{
+background-color: $fc-5;
+color: $fc-2;
+}
+
+button.active{
+background-color: $fc-1;
+color: $fc-2;
+}
+
+.container{
+padding:2em 1.5em;margin-inline:auto;max-width: 60rem; border-radius: 10px;}  
+
+.tips{
+display: grid;
+grid-gap: 1em;
+grid-template-columns: repeat(2,minmax(0,1fr));
+
+
+input{
+font-size: $fs-1;
+font-weight: $fw-1;
+text-align: center;
+}
+}
+
+
+
+@media (min-width:1000px){
+
+    .container{
+    display:grid;
+    gap: 2em;
+    padding: 2.5em;
+    grid-template-columns: 1fr 1fr;
+    }
+
+    .display-container{
+
+     > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2em 1em;
+        height: 100%;
+     }
+    
+    }
+
+    .tips{
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+
+}
