@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Project Starter File</title>
+</head>
+<body>
+    <header style="padding: 4em;">
+        <h1 class="uppercase d-flex justify-center">spli <br> tter</h1>
+    </header>
+    <main>
+        <div class="container bg-3 style="padding: 2em;">
+
+            <div>
+                <div class="bill padding-bottom">
+                    <form action="">
+                        <label for="name">Bill</label>
+                        <input id="bill" type="number" min="1" required>
+                    </form>
+                </div>
+    
+                    <div class="select-tip padding-bottom">
+                        
+                        <label for="name">Select Tip %</label>
+                        <div class="tips">
+                            <button>5%</button>
+                            <button>10%</button>
+                            <button class="active">15%</button>
+                            <button>25%</button>
+                            <button>50%</button>
+                            <input type="number" placeholder="Custom">
+                        </div>
+                   
+                        
+                    </div>
+    
+                    <div class="people active padding-bottom d-flex column">
+                        <form>
+                            <div class="d-flex align-center space-between">
+                                <label for="name">Number of People</label>
+                                <p class="error fs-3 fw-1 d-none" style="color: orange;">Can't be zero</p>
+                            </div>
+                            
+                            <input id="people" type="number" min="1" required>
+                        </form>
+                    </div>
+            </div>
+
+            <div class="display-container bg-2" style="padding: 1.5em; border-radius: 10px;">
+
+                <div class="tesst">
+                    <div>
+                    <div class="display d-flex space-between align-center" style="padding-bottom: 1.5em;">
+                        <p class="fc-7">Tip Amount <br> <span class="fc-4">/ person</span></p>
+                        <div>
+                            <h1 class="fc-1 fs-2 result">$0.00</h1>
+                        </div>
+                    </div>
+
+                    <div class="display d-flex space-between align-center" style="padding-bottom: 1.5em;">
+                        <p class="fc-7">Total <br> <span class="fc-4">/ person</span> </p>
+                        <div>
+                            <h1 class="fc-1 fs-2 result">$0.00</h1>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="reset">
+                        <button id="reset" class="uppercase bg-4" style="width: 100%;">reset</button>
+                    </div>
+
+                   
+                </div>
+
+ 
+            </div>
+
+            
+        </div>
+    </main>
+
+    
+    
+    <script src="/js/main.js"></script>
+</body>
+</html>
+
