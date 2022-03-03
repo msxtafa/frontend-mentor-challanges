@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Josefin+Sans&family=Outfit:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+:root .theme-1 {
+/* ------------FONT------------- */
+--ff:'Bai Jamjuree', sans-serif;;
+
+/* ------------COLORS------------- */
+
+/* background */
+--background-clr: hsl(222, 26%, 31%);
+--keypad-background-clr:hsl(223, 31%, 20%);
+--toggle-background-clr:hsl(223, 31%, 20%);
+--screen-backgound-clr:hsl(224, 36%, 15%);
+
+/* Keys */
+--number-operator-keys-background-clr:hsl(30, 25%, 89%);
+--number-operator-keys-shadow-clr:hsl(28, 16%, 65%);
+
+--equal-key-background-clr:hsl(6, 63%, 50%);
+--equal-key-shadow-clr:hsl(6, 70%, 34%);
+
+--reset-keys-background-clr:hsl(225, 21%, 49%);
+--reset-keys-shadow-clr:hsl(224, 28%, 35%);
+
+/* Text */
+
+--heading-font-clr:white;
+--number-keys-font-clr:hsl(221, 14%, 31%);
+--equal-keys-font-clr:white;
+--reset-keys-font-clr:white;
+
+
+/* ------------FONTSIZE------------- */
+--fs-heading:2rem;
+--fs-para:0.9rem;
+
+/* ------------BORDER------------- */
+--br: 5px;
+}
+
+:root .theme-2{
+  /* ------------FONT------------- */
+  --ff:'Bai Jamjuree', sans-serif;;
+  
+  /* ------------COLORS------------- */
+  
+  /* background */
+  --background-clr: hsl(0, 0%, 90%);
+  --keypad-background-clr:hsl(0, 5%, 81%);
+  --toggle-background-clr:hsl(0, 5%, 81%);
+  --screen-backgound-clr:hsl(0, 0%, 93%);
+  
+  /* Keys */
+  --number-operator-keys-background-clr:hsl(45, 7%, 89%);
+  --number-operator-keys-shadow-clr:hsl(35, 11%, 61%);
+  
+  --equal-key-background-clr:hsl(25, 98%, 40%);
+  --equal-key-shadow-clr:hsl(25, 99%, 27%);
+  
+  --reset-keys-background-clr:hsl(185, 42%, 37%);
+  --reset-keys-shadow-clr:hsl(185, 58%, 25%);
+  
+  /* Text */
+  
+  --heading-font-clr:hsl(60, 10%, 19%);
+  --number-keys-font-clr:hsl(60, 10%, 19%);
+  --equal-keys-font-clr:white;
+  --reset-keys-font-clr:white;
+  
+  
+  /* ------------FONTSIZE------------- */
+  --fs-heading:2rem;
+  --fs-para:0.9rem;
+  
+  /* ------------BORDER------------- */
+  --br: 5px;
+}
+
+:root .theme-3{
+    /* ------------FONT------------- */
+    --ff:'Bai Jamjuree', sans-serif;;
+    
+    /* ------------COLORS------------- */
+    
+    /* background */
+    --background-clr: hsl(268, 75%, 9%);
+    --keypad-background-clr:hsl(268, 71%, 12%);
+    --toggle-background-clr:hsl(268, 71%, 12%);
+    --screen-backgound-clr:hsl(268, 71%, 12%);
+    
+    /* Keys */
+    --number-operator-keys-background-clr:hsl(268, 47%, 21%);
+    --number-operator-keys-shadow-clr:hsl(290, 70%, 36%);
+    
+    --equal-key-background-clr:hsl(176, 100%, 44%);
+    --equal-key-shadow-clr:hsl(177, 92%, 70%);
+    
+    --reset-keys-background-clr:hsl(281, 89%, 26%);
+    --reset-keys-shadow-clr:hsl(285, 91%, 52%);
+    
+    /* Text */
+    
+    --heading-font-clr:hsl(52, 100%, 62%);
+    --number-keys-font-clr:hsl(52, 100%, 62%);
+    --equal-keys-font-clr:hsl(198, 20%, 13%);
+    --reset-keys-font-clr:white;
+    
+    
+    /* ------------FONTSIZE------------- */
+    --fs-heading:2rem;
+    --fs-para:0.9rem;
+    
+    /* ------------BORDER------------- */
+    --br: 5px;
+}
+
+
+body{
+font-family: var(--ff);
+font-weight: 700;
+min-width: 300px;
+max-width: 500px;
+min-height: 100vh;
+overflow: hidden;
+padding: 2em 1em;
+margin: 0 auto;
+background-color: var(--background-clr);
+}
+
+
+h1{
+font-size: var(--fs-heading);
+}
+
+.reset h1 ,.del h1{
+font-size: 1.2rem;
+}
+
+p{
+font-size: var(--fs-para);
+text-transform: uppercase;
+}
+
+.container{
+padding: 2em 0;
+}
+
+
+.header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: var(--heading-font-clr);
+}
+
+/**logo**/
+
+
+.theme-container{
+display:flex;
+align-items: center;
+gap: 1em;
+}
+
+
+
+.theme-switcher{
+position: relative;
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 50px;
+height: 15px;
+background-color: var(--toggle-background-clr);
+border-radius: 25px;
+}
+
+.circle{
+position: absolute;
+width: 10px;
+height: 10px;
+left: 4px;
+background: var(--equal-key-background-clr);
+border-radius: 50%;
+transition: 1s ease;
+}
+
+
+.theme-switcher span{
+display: block;
+width: 100%;
+height: 100%;
+}
+
+.theme-desc{
+position: absolute;
+display: flex;
+justify-content: space-around;
+bottom: 12px;
+width: 50px;
+}
+
+/* display */
+
+
+.display{
+width: 100%;
+height: 80px;
+padding: 1em;
+background-color: var(--screen-backgound-clr);
+border-radius: var(--br);
+margin-top: 0.5em;
+text-align: right;
+color:var(--heading-font-clr);
+}
+
+
+.keys{
+display: grid;
+margin-top: 1em;
+grid-template-columns: repeat(4, 1fr);
+grid-auto-rows: 1fr;
+padding: 1.5em;
+gap: 2em 2em;
+justify-content: center;
+width: 100%;
+background-color: var(--keypad-background-clr);
+height: min-content;
+border-radius: var(--br);
+}
+
+.key{
+width: 100%;
+text-align: center;
+background-color: var(--number-operator-keys-background-clr);
+color: var(--number-keys-font-clr);
+border-radius: var(--br);
+box-shadow: var(--number-operator-keys-shadow-clr) 0px 4px 0px 0px;
+}
+
+.key:active{
+  box-shadow: var(--number-operator-keys-shadow-clr) 0px 0px 0px 0px;
+  transform: translateY(4px);
+}
+
+.reset{
+grid-column: 1/3;
+background-color: var(--reset-keys-background-clr);
+color: var(--reset-keys-font-clr);
+box-shadow: var(--reset-keys-shadow-clr) 0px 4px 0px 0px;
+text-transform: uppercase;
+font-size: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.del{
+background-color: var(--reset-keys-background-clr);
+color: var(--reset-keys-font-clr);
+box-shadow: var(--reset-keys-shadow-clr) 0px 4px 0px 0px;
+text-transform: uppercase;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.equal{
+grid-column: 3/5;
+background-color: var(--equal-key-background-clr);
+color:var(--equal-keys-font-clr);
+box-shadow: var(--equal-key-shadow-clr) 0px 4px 0px 0px;
+}
