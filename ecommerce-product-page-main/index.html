@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+
+  <!--nav-->
+  <nav>
+    <div class="nav-list-container">
+      <div class="mobile-nav-icon">
+        <img src="./images/icon-menu.svg" alt="" id="icon-bars">
+      </div>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="">
+      </div>
+      <div class="nav-list" id="mobile-nav">
+        <img src="/images/icon-close.svg" alt="" id="icon-close">
+        <ul>
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+
+    <!--cart-->
+    <div class="cart-container">
+      <div class="cart" id="cart">
+        <div id="cart-info">
+          <small id="quantity-info"></small>
+        </div>
+        <img src="./images/icon-cart.svg" alt="">
+        <div class="shopping-cart active" id="shopping-cart">
+          <h1>Cart</h1>
+          <div class="underline-cart"></div>
+          <div class="empty-cart" id="empty-cart">
+            <p>Your cart is empty.</p>
+          </div>
+          <div class="shopping-cart-content" id="shopping-cart-content">
+            <div class="filled-cart">
+              <div class="cart-img">
+                <img src="./images/image-product-1-thumbnail.jpg" alt="">
+              </div>
+              <div class="product-info">
+                <p class="item-title">Autumn Limited Edition..</p>
+                <div class="price">
+                  <p id="item-price">$125.00</p>
+                  <p id="item-quantity"></p>
+                  <h2 id="total-price"></h2>
+                </div>
+              </div>
+              <div class="item-delete">
+                <img src="./images/icon-delete.svg" alt="" class="delete-icon" id="delete-icon">
+              </div>
+            </div>
+            <div class="cart-btn">
+              <button class="btn-checkout">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--user-->
+      <div class="user">
+        <img src="./images/image-avatar.png" alt="avatar">
+      </div>
+    </div>
+  </nav>
+  <span class="underline-desktop"></span>
+  
+  <!-- nav end-->
+  <div class="main">
+    <div class="slides-container">
+
+      <div class="arrow-container">
+        <img id="prev" src="./images/icon-previous.svg" alt="">
+        <img id="next" src="./images/icon-next.svg" alt="">
+      </div>
+
+      <div class="slides">
+        <img src="./images/image-product-1.jpg" alt="" class="product-img d-block">
+        <img src="./images/image-product-2.jpg" alt="" class="product-img ">
+        <img src="./images/image-product-3.jpg" alt="" class="product-img ">
+        <img src="./images/image-product-4.jpg" alt="" class="product-img ">
+      </div>
+
+      <div class="slides-desktop-thumbnail">
+        <div class="thumbnail-images">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="" class="thumbnail active">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="" class="thumbnail">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="" class="thumbnail">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="" class="thumbnail">
+        </div>
+      </div>
+    </div>
+
+    <div class="product-info">
+      <p class="company-name">sneaker company</p>
+      <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+      <p class="product-description">These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+      <div class="product-price-info">
+        <div class="new-price">
+          <h2 class="price">$125.00</h2>
+          <h4 class="discount">50%</h4>
+        </div>
+        <p class="old-price">$250.00</p>
+      </div>
+
+      <!--Quantity-->
+      <div class="cart-container">
+        <div class="cart-input-container">
+          <button id="btn-decrease" class="cart-minus">-</button>
+          <input type="number" id="quantity-input" disabled>
+          <button id="btn-increase" class="cart-plus">+</button>
+        </div>
+
+        <div class="cart-add-container">
+          <button id="cart-add" class="cart-add"> <img class="cart-svg" src="./images/icon-cart.svg" alt="">
+            Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
