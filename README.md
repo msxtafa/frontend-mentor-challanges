@@ -2,7 +2,7 @@
 
 This is a solution repository for Frontend Mentor challenges.
 
-All Projects are hosted on Netlify, to view all check out this [link](https://www.frontendmentor.io/profile/msxtafa)
+All Projects are hosted on Netlify, to view all check out this [link]()
 
 
 ## Projects
