@@ -7,7 +7,7 @@ All Projects are hosted on Netlify, to view all check out this [link]()
 
 ## Projects
 
-| Project Links  | Repo Links |
+| Project Link  | Repo Link |
 | ------------- | ------------- |
 |  [E-commerce Product Page](https://msxtafa-ecommerce-product-page.netlify.app) | [link](https://github.com/msxtafa/frontend-mentor-challenges/tree/main/ecommerce-product-page-main) |
 |  [calculator App](https://msx-calculator.netlify.app) | [link](https://github.com/msxtafa/frontend-mentor-challenges/tree/main/calculator-app-main) |
