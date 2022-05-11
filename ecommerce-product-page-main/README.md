@@ -40,7 +40,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [msxtafa-ecommerce-product-page.netlify.app]
+- Solution URL: [https://msxtafa-ecommerce-product-page.netlify.app](https://msxtafa-ecommerce-product-page.netlify.app)
 
 
 ## My process
