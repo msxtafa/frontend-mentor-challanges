@@ -15,7 +15,7 @@ All Projects are hosted on Netlify, to view all check out this [link]()
 |  [Todo App](https://msx-todo.netlify.app) | [link](https://github.com/msxtafa/frontend-mentor-challenges/tree/main/todo-app-main) |
 |  [Tip Calculator App](https://msx-tipcalculator.netlify.app) | [link](https://github.com/msxtafa/frontend-mentor-challenges/tree/main/tip-calculator-app-main) |
 |  [Easybank Landing Page](https://msx-easybank.netlify.app) | [link](https://github.com/msxtafa/frontend-mentor-challenges/tree/main/easybank-landing-page-master) |
-|  [Landing Page](https://msx-easybank.netlify.app) | [link](https://msx-intro-section-with-dropdown-navigation-main.netlify.app) |
+|  [Landing Page](https://msx-intro-section-with-dropdown-navigation-main.netlify.app) | [link](https://github.com/msxtafa/frontend-mentor-challenges/tree/main/intro-section-with-dropdown-navigation-main) |
 
 
 
