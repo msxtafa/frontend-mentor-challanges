@@ -1,0 +1,273 @@
+@import "reset";
+@import "utility";
+
+//font
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@700&family=Hepta+Slab:wght@500&display=swap');
+
+//body
+
+body{
+font-size: 18px;
+font-family: 'Epilogue', sans-serif;
+height: 100vh;
+max-width: 1440px;
+margin: 0 auto;
+}
+//header
+
+header{
+padding: 1.5em;
+}
+
+
+nav{
+display: flex;
+justify-content: space-between;
+
+
+.logo{
+margin-top: 10px;
+}
+
+.sidebar{
+position: absolute;
+padding:5em 2em;
+background-color: white;
+width: 60%;
+right: 0;
+top: 0;
+bottom: 0;
+
+ul li{
+color: hsl(0, 0%, 41%);
+}
+
+ul li:hover{
+color: black;
+}
+}
+
+
+img{
+display: inline-block;
+margin-right: 15px;
+}
+
+.dropdown-link > img{
+padding: 2px 5px;
+}
+
+ul li{
+color:hsl(0, 0%, 41%);
+line-height: 40px;
+font-weight: 500;
+font-size: 15px;
+}
+
+
+.dropdown-content li{
+padding-left: 20px;
+}
+
+.sign{
+display: flex;
+flex-direction: column;
+
+gap: 1em;
+font-size: 15px;
+
+button{
+color: hsl(0, 0%, 41%);
+margin: 0 auto;
+width: 90px;
+height: 40px;
+}
+
+button:hover{
+color: black;
+}
+
+.register{
+border: 2px solid hsl(0, 0%, 41%);
+border-radius: 10px;
+}
+
+}
+
+
+.nav-icon{
+z-index:2;
+}
+
+
+}
+
+
+
+main{
+
+.hero-img{
+  height: 35vh;
+  background-image: url(/images/image-hero-mobile.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.content{
+text-align: center;
+padding: 2em 20px 0 20px;
+
+>*:not(h1){
+padding: 1em 0;
+}
+
+.desktop-break{
+display: none;
+}
+
+h1{
+font-weight: 700;
+}
+
+p{
+font-family: 'Hepta Slab', serif;
+color: hsl(0, 0%, 41%);
+}
+
+button{
+color: hsl(0, 0%, 98%);
+background-color: black;
+padding: 0.6em 1em;
+border-radius: 15px;
+width: 150px;
+}
+
+.clients{
+display: flex;
+justify-content: space-between;
+padding: 3em 0;
+
+img{
+height: 19px;
+
+}
+
+}
+
+}
+
+}
+
+// desktop
+@media (min-width:950px){
+
+nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+.sidebar{
+position: static;
+display: flex;
+justify-content: space-between;
+width: 100%;
+margin-left: 50px;
+padding: 0;
+}
+
+.navbar{
+display: flex;
+
+>li:not(.dropdown-link){
+margin-right:35px;
+}
+
+
+
+}
+
+.dropdown-link{
+position: relative;
+}
+
+.dropdown-content{
+position: absolute;
+background-color: white;
+padding: 1em 1em 1em 0;
+border-radius: 20px;
+width: 150px;
+right: 0;
+
+
+
+
+box-shadow: 1px 6px 29px 5px rgba(0,0,0,0.15);
+}
+
+.sign{
+flex-direction: row;
+align-items: center;
+}
+
+
+.nav-icon{
+display: none;
+}
+
+}
+
+
+main{
+display: grid;
+grid-template-columns:4fr 4fr;
+max-width: 1440px;
+gap: 5em;
+padding: 2em 6em;
+
+
+.hero-img{
+  order: 2;
+  background-image: url(/images/image-hero-desktop.png);
+  height: 80vh;
+  background-position: center center;
+  }
+
+.content{
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-self: flex-end;
+  text-align:start;
+  padding: 0;
+  
+
+  .desktop-break{
+  display: block;
+  }
+
+  h1{
+  font-size: 4em;
+  font-weight: 700;
+  }
+  
+  p{
+  padding: 2em 0;
+  }
+
+  button{
+  margin: 2em 0;
+  }
+
+  .clients{
+  width: 100%;
+  padding: 8em 0 0 0;
+  }
+}
+      
+
+}
+}
+
+
