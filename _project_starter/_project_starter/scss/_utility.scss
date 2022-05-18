@@ -1,0 +1,73 @@
+/************************************************************/
+/********************  Utility-classes   ********************/
+/************************************************************/
+    
+.container{padding-inline:2em;margin-inline:auto;max-width: 80rem;}  
+.d-flex{display: flex; gap: var(--gap, 1rem);}    
+.d-grid{ display: grid;gap: var(--gap, 1rem);}   
+.d-block{display: block;} 
+.d-none{display: none;}
+.uppercase{text-transform: uppercase;}
+
+
+/************************************************************/
+/********************  background-color  ********************/
+/************************************************************/
+
+$bg-1: #0000;
+$bg-2: #0000;
+$bg-3: #0000;
+
+.bg-1{background-color: $bg-1;}
+.bg-2{background-color: $bg-2;}
+.bg-3{background-color: $bg-3;}
+
+/************************************************************/
+/********************     font-color     ********************/
+/************************************************************/
+
+$fc-1:#0000;
+$fc-2:#0000;
+$fc-3:#0000;
+
+.fc-1{color: $fc-1;}
+.fc-2{color: $fc-2;}
+.fc-3{color: $fc-3;}
+
+/************************************************************/
+/********************     font-size      ********************/
+/************************************************************/
+
+$fs-1:6rem;   // heading
+$fs-2:4rem;   // sub-heading
+$fs-3:1rem;   // paragraph
+
+.fs-1{font-size: $fs-1;}
+.fs-2{font-size: $fs-2;}
+.fs-3{font-size: $fs-3;}
+
+
+/************************************************************/
+/********************     font-family    ********************/
+/************************************************************/
+
+$ff-1:serif;
+$ff-2:serif;
+$ff-3:serif;
+
+.ff-1{font-family: $ff-1;}
+.ff-2{font-family: $ff-2;}
+.ff-3{font-family: $ff-3;}
+
+/************************************************************/
+/********************     letter-spacing   ******************/
+/************************************************************/
+
+$letter-spacing-1:4px;
+$letter-spacing-2:2.7px;
+$letter-spacing-3:2.35px;
+
+.letter-spacing-1{letter-spacing:$letter-spacing-1}
+.letter-spacing-2{letter-spacing:$letter-spacing-2}
+.letter-spacing-3{letter-spacing:$letter-spacing-3}
+
