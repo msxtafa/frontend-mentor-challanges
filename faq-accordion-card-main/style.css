@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+ul{
+padding: 0;
+}
+
+li{
+list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body{
+font-family: 'Poppins', sans-serif;
+font-size: 12px;
+}
+
+header{
+padding: 2em 0;
+min-height: 100vh;
+background: linear-gradient(0deg, hsl(240, 73%, 65%) 30%, hsl(273, 75%, 66%) 90%);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.accordion_wrapper{
+max-width: 45%;
+min-width: 330px;
+background-color: white;
+display: grid;
+grid-template-columns: 1fr 1fr;
+border-radius: 20px;
+}
+
+.accordion{
+width: 90%;
+padding: 3em 2em 3em 0;
+}
+
+label{
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-weight: bold;
+padding-bottom: .6em;
+}
+
+label img{
+display: inline;
+}
+
+li{
+padding-top: 1em;
+}
+
+p{
+height: 0;
+overflow: hidden;
+padding-right: 20px;
+margin-bottom: 12px;
+transition: all 500ms ease;
+}
+
+input[type="radio"]{
+display: none;
+}
+
+input:checked + p {
+height: 50px;
+}
+
+
+.underline{
+width: 100%;
+display:block;
+margin-top: 5px;
+height: 2px;
+background-color: gray;
+}
+
+
+.accordion_illustration{
+position: relative;
+}
+
+
+.accordion_illustration_wrapper img{
+position: absolute;
+}
+
+
+#pattern{
+top: 15%;
+right:25%;
+}
+
+#women{
+top: 15%;
+right: 25%;
+}
+
+
+@media(max-width:1200px){
+
+#pattern{
+content:url("/images/bg-pattern-mobile.svg");
+width: 200px;
+margin-left: auto;
+margin-right: auto;
+inset: 0;
+}
+
+#women{
+content:url("/images/illustration-woman-online-mobile.svg");
+width: 200px;
+margin-left: auto;
+margin-right: auto;
+inset: -80% 0 0 0;
+}
+
+.accordion_wrapper{
+grid-template-columns: none;
+grid-template-rows: 100px 1fr;
+}
+
+.accordion{
+width: 100%;
+padding: 2em;
+}
+
+.accordion_heading{
+text-align: center;
+}
+}
+
+
+
+
