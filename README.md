@@ -26,7 +26,7 @@ All Projects are hosted on Netlify, to view all check out this [link]()
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/msxtafa)
-- Twitter - [@yourusername](https://www.twitter.com/msxtafa)
+- Frontend Mentor - [@msxtafa](https://www.frontendmentor.io/profile/msxtafa)
+
 
 
